@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/daily.css">
     <title>Document</title>
 </head>
 
@@ -17,7 +17,7 @@
 
     <div class="navbar-contain">
         <ul class="type-navbar" style="list-style: none;">
-            <li><a href="index.html" class="anchor">Home</a></li>
+            <li><a href="./../index.html" class="anchor">Home</a></li>
             <li><a href="./pages/daily.html" class="anchor">Daily Products</a></li>
             <li><a href="" class="anchor">Snacks</a></li>
             <li><a href="" class="anchor"><img src="./../icon/cart.png" alt="" style="height: 40px;"></a></li>
@@ -26,8 +26,8 @@
                 <img src="./../icon/profile.png" alt="" style="height: 40px;">
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">My Information</a></li>
-                  <li><a class="dropdown-item" href="#">Address List</a></li>
+                  <li><a class="dropdown-item" href="./profile/myinfo.html">My Information</a></li>
+                  <li><a class="dropdown-item" href="./profile/address.html">Address List</a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
                 </ul>
               </li></a></li>
@@ -37,8 +37,7 @@
     <br><br>
 
     <div class="itemlist">
-        <p style="display: flex;">Top Trending Sales <img src="./icon/fireworks.gif" alt="" style="height: 80px;"></p>
-        
+        <p style="display: flex;">Daily Items <img src="./../icon/fireworks.gif" alt="" style="height: 80px;"></p>
         <div class="item">
             <div class="card" style="width: 18rem;">
                 <img src="./../images/Vikas Milk.png" class="card-img-top" alt="...">
@@ -54,59 +53,59 @@
             </div>
 
             <div class="card" style="width: 18rem;">
+                <img src="./../images/Sugar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Super Sarvottam</h5>
+                    <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
+                    <div class="quantity-btn-container">
+                        <button type="button" onclick="decrement()"> - </button>
+                        <span id="quantity">1</span>
+                        <button type="button" onclick="increment()"> + </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./../images/Amul Taaza.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Super Sarvottam</h5>
+                    <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
+                    <div class="quantity-btn-container">
+                        <button type="button" onclick="decrement()"> - </button>
+                        <span id="quantity">1</span>
+                        <button type="button" onclick="increment()"> + </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./../images/Vikas Chaach.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Super Sarvottam</h5>
+                    <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
+                    <div class="quantity-btn-container">
+                        <button type="button" onclick="decrement()"> - </button>
+                        <span id="quantity">1</span>
+                        <button type="button" onclick="increment()"> + </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./../images/Dahi.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Super Sarvottam</h5>
+                    <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
+                    <div class="quantity-btn-container">
+                        <button type="button" onclick="decrement()"> - </button>
+                        <span id="quantity">1</span>
+                        <button type="button" onclick="increment()"> + </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
                 <img src="./../images/Kissan Fresh Tomato Ketchup.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Super Sarvottam</h5>
-                    <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
-                    <div class="quantity-btn-container">
-                        <button type="button" onclick="decrement()"> - </button>
-                        <span id="quantity">1</span>
-                        <button type="button" onclick="increment()"> + </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./../images/Bharat Dal Chana Dal.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Super Sarvottam</h5>
-                    <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
-                    <div class="quantity-btn-container">
-                        <button type="button" onclick="decrement()"> - </button>
-                        <span id="quantity">1</span>
-                        <button type="button" onclick="increment()"> + </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./../images/Sprite 1L.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Super Sarvottam</h5>
-                    <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
-                    <div class="quantity-btn-container">
-                        <button type="button" onclick="decrement()"> - </button>
-                        <span id="quantity">1</span>
-                        <button type="button" onclick="increment()"> + </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./../images/Surf Excel.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Super Sarvottam</h5>
-                    <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
-                    <div class="quantity-btn-container">
-                        <button type="button" onclick="decrement()"> - </button>
-                        <span id="quantity">1</span>
-                        <button type="button" onclick="increment()"> + </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./../images/MirinDa.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Super Sarvottam</h5>
                     <span class="card-text">Super Sarvottam Physically Refined Rice Bran Oil 1 L</span><br>
