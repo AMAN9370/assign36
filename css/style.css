@@ -1,0 +1,44 @@
+.banner{
+    height: 160px;
+    
+}
+#ban{
+    font-family: copperplate gothic ;
+    margin-left: 200px;
+    font-size: 100px;
+}
+
+.navbar-contain{
+    border: 2px solid black;
+}
+.type-navbar{
+    margin-left: 200px;
+    font-size: 25px;
+    gap: 100px;
+    display: flex;
+}
+
+#searchbar{
+    height: 50px;
+    width: 400px;
+    margin-left: 200px;
+}
+
+.item{
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemlist{
+    margin-left: 200px;
+    p{
+        font-size: 50px;
+    }
+}
+
+.quantity-btn-container{
+    button{
+        size: 100px;
+    }
+}
