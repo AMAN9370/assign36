@@ -9,12 +9,16 @@
 }
 
 .navbar-contain{
-    border: 2px solid black;
+   background-color: rgb(221, 221, 221);
+}
+
+#searchbar{
+    border-radius: 10px;
 }
 .type-navbar{
     margin-left: 200px;
     font-size: 25px;
-    gap: 100px;
+    gap: 60px;
     display: flex;
 }
 
