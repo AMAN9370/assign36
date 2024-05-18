@@ -17,8 +17,8 @@
 
     <div class="navbar-contain">
         <ul class="type-navbar" style="list-style: none;">
-            <li><a href="index.html" class="anchor">Home</a></li>
-            <li><a href="./pages/daily.html" class="anchor">Daily Products</a></li>
+            <li><a href="./../../index.html" class="anchor">Home</a></li>
+            <li><a href="././../../pages/daily.html" class="anchor">Daily Products</a></li>
             <li><a href="" class="anchor">Snacks</a></li>
             <li><a href="" class="anchor"><img src="./../../icon/cart.png" alt="" style="height: 40px;"></a></li>
             <li><a href="" class="anchor">
@@ -28,8 +28,8 @@
                     <img src="./../../icon/profile.png" alt="" style="height: 40px;">
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">My Information</a></li>
-                    <li><a class="dropdown-item" href="#">Address List</a></li>
+                    <li><a class="dropdown-item" href="./../profile/myinfo.html">My Information</a></li>
+                    <li><a class="dropdown-item" href="./../profile/address.html">Address List</a></li>
                     <li><a class="dropdown-item" href="#"></a></li>
                 </ul>
             </li></a></li>
@@ -37,8 +37,6 @@
         </ul>
     </div>
     <br><br>
-
-
     <div>
         <p class="Maintext">Select Or Add Your Address Here !......</p>
         <label for="task" class="text-light fs-2 ">Task :</label>
@@ -80,9 +78,8 @@
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `
                     <div class="list-container">
-                        <img src="./" class="check" onclick="completedTask(${i})">
                         <span class="task-item">${todoItem}</span>
-                        <img src="./icons/x.png" class="remove" onclick="deleteTask(${i})">
+                        <button class="remove" onclick="deleteTask(${i})">Remove
                     </div>`;
                 listContainer.appendChild(listItem);
                 
@@ -93,7 +90,7 @@
             let todoListItem = JSON.parse(localStorage.getItem("todoList")) 
             const listItem = listContainer.children[index];
             const checkIcon = listItem.querySelector(".check");
-            checkIcon.src = "./icons/correct.png";
+            checkIcon.src = "./../../icon/correct.png";
             listItem.classList.add("completed");
             localStorage.setItem("todoList", JSON.stringify(todoListItem));
 

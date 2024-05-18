@@ -66,3 +66,16 @@
     height: 40px;
     width: 90px;
 }
+
+.check{
+    height: 30px;
+}
+
+.remove{
+    height: 30px;
+}
+
+#list-cont{
+    list-style: none;
+    margin-left: 180px;
+}
