@@ -21,6 +21,10 @@
     gap: 60px;
     display: flex;
 }
+.anchor{
+    color: black;
+    text-decoration: none;
+}
 
 #searchbar{
     height: 50px;
